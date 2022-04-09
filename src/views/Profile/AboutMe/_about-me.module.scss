@@ -1,0 +1,119 @@
+@import "../../styles/root";
+
+.aboutMe {
+    z-index: 1;
+    width: 100%;
+    min-height: 62rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3rem;
+
+    .info {
+        width: 114rem;
+        height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1rem 0 3rem;
+
+        .content {
+            width: 54rem;
+            height: 100%;
+            padding: 1.5rem;
+            // margin: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .name {
+                font-size: 2.4rem;
+            }
+
+            .task {
+                line-height: 2.25rem;
+                font-size: 1.5rem;
+            }
+
+            .description {
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+            }
+        }
+
+        .boxImage {
+            width: 45rem;
+            height: 45rem;
+            padding: 1.5rem;
+            margin: 0 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(50, 81, 88);
+            font-weight: 100;
+            box-shadow: 0 0.1rem 1.5rem -0.3rem #7091a1;
+            transform: rotate(-4deg);
+
+            .image {
+                background-image: url(../../../../public/images/nduonglong02.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+// Thiết bị màn hình nhỏ hơn 1200px
+@media only screen and (max-width: 1199px) {
+    .aboutMe {
+        .info {
+            .content {
+                margin: 1.3rem 2rem;
+                .task {
+                    margin: 1.3rem 2rem;
+                }
+                .description {
+                    margin: 1.3rem 2rem;
+                }
+            }
+        }
+    }
+}
+
+// // Thiết bị màn hình nhỏ hơn 1024px
+@media only screen and (max-width: 1023px) {
+    .aboutMe {
+        .info {
+            .boxImage {
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+}
+
+// Thiết bị màn hình nhỏ hơn 900px
+@media only screen and (max-width: 899px) {
+
+}
+
+// Thiết bị màn hình nhỏ hơn 480px
+@media only screen and (max-width: 479px) {
+    .aboutMe {
+        .info {
+            .content {
+                width: 40rem;
+            }
+        }
+    }
+}
